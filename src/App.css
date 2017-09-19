@@ -1,33 +1,117 @@
 .App {
   color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #fff;
-  margin: 2em;
-  padding: 0 1em;
   min-height: 20em;
   min-width: 32em;
-  box-shadow: 0 0 1em hsla(0,0%,0%,0.15);
+  font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.App>h1>button{
-  background: #fff;
-  border: 1px solid #ff9999;
-  padding: 3px 5px;
-  border-radius: 3px;
-  margin-left: 10px;
+.App>.aside-opened{
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 280px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.App>.aside-opened>.header{
+  background-color: #5b7a59;
+  color: #fcfdfc;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  padding: 13px 10px;
+}
+
+.App>.aside-closed{
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 50px;
+  background-color: #fff;
+}
+
+.App>.aside-closed>.header{
+  background-color: #5b7a59;
+  color: #fcfdfc;
+  height: 49px;
+}
+
+.App>.aside-closed>.first-letter{
+  background-color: #addb81;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 50%;
+  margin: 10px 4px;
+}
+
+.App>.icon-caidan{
+  font-size: 22px;
+  color: #fcfdfc;
+  position: absolute;
+  left: 10px;
+  top: 10px;
   cursor: pointer;
 }
 
-.App>h1>button:hover{
-  box-shadow: 0 0 2px 1px #ffcccc;
-  color: #ff6666;
+.App>.aside-opened>.header>p{
+  font-weight: lighter;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  font-size: 17px;
+  margin-left: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 193px;
 }
 
-.App>.todoList>li:nth-child(odd){
-  background: #ffdddd;
-}
-
-.App>.todoList>li:nth-child(even){
+.App>.aside-opened>.header>button{
   background: transparent;
+  color: #fff;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.App>.aside-opened>.header>button:hover{
+  opacity: 0.7;
+}
+
+.App>.main{
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.App>.main>.header{
+  font-size: 20px;
+  font-weight: 200;
+  color: #e0eefa;
+  background-color: rgb(102, 137, 100);
+  margin: 0;
+  padding: 13px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.App>.main>.todos{
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: scroll;
+  margin-right: -17px;
+  padding: 15px;
 }
