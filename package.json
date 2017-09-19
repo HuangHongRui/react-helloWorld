@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.12"
+    "react-scripts": "1.0.12",
+    "leancloud-realtime": "^3.4.1",
+    "leancloud-storage": "^2.1.4",
+    "normalize.css": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
