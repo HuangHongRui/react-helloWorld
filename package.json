@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "My-Todo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://huanghongrui.github.io/react-helloWorld/build"
+  "homepage": "https://huanghongrui.github.io/build"
 }
