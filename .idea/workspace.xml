@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8bd7910-74c7-4304-8e2c-237331807e7f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/asset-manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/service-worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/css/main.1e5f34b7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/css/main.1e5f34b7.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/js/main.1419f909.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/js/main.1419f909.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/iconfont.0570fe0c.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/iconfont.2df5ba35.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/iconfont.492a26b0.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/static/media/iconfont.740e722e.eot" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserDialog.js" afterPath="$PROJECT_DIR$/src/UserDialog.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -130,11 +120,6 @@
             <path>
               <item name="rui_react" type="b2602c69:ProjectViewProjectNode" />
               <item name="rui_react" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rui_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rui_react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -152,8 +137,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\it\git\myProject\rui_react\public" />
       <recent name="F:\it\git\myProject\rui_react\src" />
+      <recent name="F:\it\git\myProject\rui_react\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,12 +164,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504142620333</updated>
       <workItem from="1504142621637" duration="2353000" />
-      <workItem from="1505794999816" duration="11823000" />
+      <workItem from="1505794999816" duration="12821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14176000" />
+    <option name="totallyTimeSpent" value="15174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="634" y="31" width="740" height="694" extended-state="0" />
@@ -405,7 +390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg-app.jpg">
+    <entry file="file://$PROJECT_DIR$/src/images/bg-app.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -418,7 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/iconfont/iconfont.css">
+    <entry file="file://$PROJECT_DIR$/src/iconfont/iconfont.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
@@ -426,7 +411,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/iconfont/iconfont.svg">
+    <entry file="file://$PROJECT_DIR$/src/iconfont/iconfont.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
@@ -434,7 +419,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg-sign.svg">
+    <entry file="file://$PROJECT_DIR$/src/images/bg-sign.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="497" column="120" lean-forward="false" selection-start-line="497" selection-start-column="120" selection-end-line="497" selection-end-column="120" />
