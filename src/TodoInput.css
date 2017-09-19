@@ -1,14 +1,66 @@
 .TodoInput{
+    flex-shrink: 0;
+    flex-grow: 0;
     width: 100%;
-    line-height: 2;
-    margin-bottom: 1em;
-    font-size: 16px;
-    padding: 0 0.2em;
-    border: 1px solid #ff9999;
-    box-shadow: inset 0 0 2px 0 #ff9999;
-    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.TodoInput:focus{
-    outline-color: #ffcc99;
+.TodoInput>.InputBar{
+    display: block;
+    font-size: 16px;
+    border: none;
+    padding: 0 0.5em;
+    height: 49px;
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
 }
+
+.TodoInput>.InputBar:focus{
+    outline:none;
+}
+
+.TodoInput>button{
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0.5em 0.5em;
+    border: none;
+    background-color: transparent;
+    color: #888;
+}
+
+.TodoInput>button:hover{
+    opacity: 0.7;
+}
+
+.aside-opened>.TodoInput{
+    background-color: rgba(164, 178, 135, 0.46);
+}
+
+.aside-opened>.TodoInput>input[type="text"]{
+    color: #222;
+}
+
+.main .TodoInput{
+    background-color: rgba(120, 149, 117, 0.9);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.main .TodoInput>input[type="text"]{
+    color: #fcfdfc;
+    font-weight: 200;
+}
+
+.main .TodoInput>button>i{
+    margin-right: 15px;
+    color: rgb(213, 220, 200);
+}
+
+/*placehoder字体颜色*/
+.main .TodoInput ::-moz-placeholder { color: rgb(213, 220, 200); }
+.main .TodoInput ::-webkit-input-placeholder { color:rgb(213, 220, 200); }
+.main .TodoInput :-ms-input-placeholder { color:rgb(213, 220, 200); }

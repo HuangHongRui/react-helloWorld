@@ -1,28 +1,34 @@
 import React from 'react';
-import './TodoInput.css'
+import './TodoInput.css';
+import './../public/iconfont/iconfont.css'
 
-class TodoInput extends React.Component{
-    constructor(props){
-        super(props);
-    }
+export default function(props){
+    return (
+        <form className="TodoInput" onSubmit={addItem.bind(null, props)}>
+            <input type="text" className="InputBar"
+                placeholder={props.placeHolder}
+                value={props.content}
+                onKeyPress={submit.bind(null, props)}
+            onChange={changeTitle.bind(null, props)}/>
+            <button type="submit"><i className="iconfont icon-tianjia"></i></button>
+        </form>
+    );
+}
 
-    render(){
-        return <input type="text" className="TodoInput"
-            placeholder="添加待办事项..."
-            value={this.props.content}
-            onKeyPress={this.submit.bind(this)}
-            onChange={this.changeTitle.bind(this)}/>;
-    }
-
-    submit(e){
-        if(e.key === 'Enter'){
-            this.props.onSubmit(e);
-        }
-    }
-
-    changeTitle(e){
-        this.props.onChange(e);
+function addItem(props, e){
+    e.preventDefault();
+    if(props.content !== ''){
+        props.onSubmit(props.content);
     }
 }
 
-export default TodoInput;
+function submit(props, e){
+    if(e.key === 'Enter' && e.target.value !== ''){
+    e.preventDefault();
+        props.onSubmit(e.target.value);
+    }
+}
+
+function changeTitle(props, e){
+    props.onChange(e);
+}
