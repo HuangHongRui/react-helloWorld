@@ -36,7 +36,6 @@ class App extends Component {
         todoList: this.state.todoList
       });
     }
-
     function error(){}
     loadList(this.state.user.id, success.bind(this), error);
   }
