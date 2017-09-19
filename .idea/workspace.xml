@@ -16,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SignInForm.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SignInForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SignInForm.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignInOrSignUp.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SignInOrSignUp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,6 +71,7 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/ForgotPasswordForm.js" />
         <option value="$PROJECT_DIR$/src/SignInForm.js" />
+        <option value="$PROJECT_DIR$/src/SignInOrSignUp.js" />
       </list>
     </option>
   </component>
@@ -147,12 +158,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504142620333</updated>
       <workItem from="1504142621637" duration="2353000" />
-      <workItem from="1505794999816" duration="5803000" />
+      <workItem from="1505794999816" duration="5914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8156000" />
+    <option name="totallyTimeSpent" value="8267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="570" y="31" width="804" height="694" extended-state="0" />
@@ -396,6 +407,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SignInOrSignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
