@@ -2,7 +2,6 @@ import AV from 'leancloud-storage'
 
 var APP_ID = '563IXEClQ5Xf1HVFlHaCmorL-gzGzoHsz';
 var APP_KEY = '6w8mSAdwqvCvNjXUAgKofymo';
-
 AV.init({
   appId: APP_ID,
   appKey: APP_KEY
@@ -10,13 +9,15 @@ AV.init({
 
 export default AV;
 
-export function signUp(username, password, successFn, errorFn){
+export function signUp(username, password, email, successFn, errorFn){
   //新建AVUser实例对象
   var user = new AV.User();
   //设置用户名
   user.setUsername(username);
   //设置密码
   user.setPassword(password);
+  //设置邮箱
+  user.setEmail(email);
   //设置处理函数
   user.signUp().then(function(loginedUser){
     let user = getUserFromAVUser(loginedUser);
@@ -75,15 +76,17 @@ export function loadList(userID, successFn, errorFn){
         id: res.results[i].id,
         ...res.results[i].attributes
       };
-      list.push(obj);
+      list.unshift(obj);
 
     }
 
     successFn.call(null, list);
 
   },function(error){
-    console.log(error);
-    errorFn.call();
+    if(error.code === 101){
+      console.log('没有这个用户表');
+      errorFn.call();
+    }
   });
 }
 
@@ -103,11 +106,20 @@ export function saveListTable(item, user, successFn, errorFn){
    todoList.set('title', item.title);
    todoList.set('status', item.status);
    todoList.set('deleted', item.deleted);
+   todoList.set('group', item.group);
    todoList.save().then(function(todo){
      successFn.call(null,todo.id);
-    //  alert('保存成功');
    },function(error){
      errorFn.call(null);
      alert(error);
    })
+}
+
+//找回密码
+export function sendPasswordResetEmail(email, successFn, errorFn){
+  AV.User.requestPasswordReset(email).then(function(success){
+    successFn.call(null, success);
+  },function(error){
+    errorFn.call(null, error);
+  })
 }
