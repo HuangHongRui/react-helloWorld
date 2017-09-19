@@ -1,27 +1,36 @@
+@import 'animate.css';
+
 .TodoGroup{
   flex-shrink: 1;
   flex-grow: 1;
   overflow-x: hidden;
   min-height: 100px;
   margin-right: -17px;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+ 
 }
 
 .TodoGroup>li{
     margin: 0;
-    padding:10px;
+    padding:20px;
     padding-right: 40px;
     cursor: pointer;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    background-color: rgba(200,200,200,0.1);
+    color: #ddd;
+    display: flex;
+    align-items: center;
+      position: relative;
+  animation: bounceInDown 1s linear; 
 }
 
 .TodoGroup>li>.delete-group{
     position: absolute;
     right: 25px;
-    top: 10px;
+    top: 22px;
     padding: 1px 2px;
     font-size: 14px;
     visibility: hidden;
@@ -30,14 +39,16 @@
 .TodoGroup>li>i{
     font-weight: 200;
     font-size: 0.8em;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 .TodoGroup>li.active{
     background: #e0eefa;
+    color: #000;
 }
 
-.TodoGroup>li.active>i,.TodoGroup>li.active>.delete-group{
-    color: #2b8dec;
+.TodoGroup>li.active>i,
+.TodoGroup>li.active>.delete-group {
+    color: #000;
     visibility: visible;
 }

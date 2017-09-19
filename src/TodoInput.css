@@ -15,7 +15,20 @@
     height: 49px;
     flex-grow: 1;
     border: none;
+    color: #aaa;
     background-color: transparent;
+}
+
+.InputBar::-webkit-input-placeholder {
+    color: #aaa;
+}
+.InputBar:-moz-placeholder {
+    color: #aaa;
+}
+
+.InputBar:-ms-input-placeholder {
+    /* IE10+ */
+    color: #aaa;
 }
 
 .TodoInput>.InputBar:focus{
@@ -29,7 +42,7 @@
     padding: 0.5em 0.5em;
     border: none;
     background-color: transparent;
-    color: #888;
+    color: #ccc;
 }
 
 .TodoInput>button:hover{
@@ -37,15 +50,16 @@
 }
 
 .aside-opened>.TodoInput{
-    background-color: rgba(164, 178, 135, 0.46);
+    background-color: rgba(200,200,200,0.2);
 }
 
 .aside-opened>.TodoInput>input[type="text"]{
-    color: #222;
+    color: #eee;
+    text-align: center;
 }
 
 .main .TodoInput{
-    background-color: rgba(120, 149, 117, 0.9);
+    background-color: rgba(200, 200, 200, 0.2);
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -53,6 +67,7 @@
 .main .TodoInput>input[type="text"]{
     color: #fcfdfc;
     font-weight: 200;
+    text-align: center;
 }
 
 .main .TodoInput>button>i{

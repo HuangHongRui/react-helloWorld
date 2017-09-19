@@ -35,7 +35,7 @@ class App extends Component {
             this.initTodoList.call(this);
         }
     }
-
+ 
     initTodoList(){
         function success(list){
             let stateCopy = copyByJSON(this.state);

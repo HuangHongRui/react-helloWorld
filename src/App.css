@@ -1,3 +1,4 @@
+@import 'animate.css';
 .App {
   color: #333;
   min-height: 20em;
@@ -19,68 +20,77 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
+  animation: bounceInLeft 1s linear;  
+  background-color: transparent;
+  border-right: 1px solid rgba(200,200,200,0.3)
 }
 
 .App>.aside-opened>.header{
-  background-color: #5b7a59;
+  background-color: rgba(200,200,200,0.5);
   color: #fcfdfc;
   flex-shrink: 0;
   flex-grow: 0;
   display: flex;
   align-items: center;
   padding: 13px 10px;
+  min-height: 9.5vw;
 }
 
 .App>.aside-closed{
   flex-grow: 0;
   flex-shrink: 0;
-  width: 50px;
-  background-color: #fff;
+  background-color: transparent;
+  position: relative;
+  animation: slideInLeft 1s linear;  
+  width: 60px;
 }
 
 .App>.aside-closed>.header{
-  background-color: #5b7a59;
+  background-color: rgba(200,200,200,0.5);
   color: #fcfdfc;
-  height: 49px;
+  height: 10vw;
 }
 
 .App>.aside-closed>.first-letter{
-  background-color: #addb81;
+  background-color: #888;
   color: #fff;
   font-size: 20px;
   text-align: center;
   padding: 8px 0;
-  border-radius: 50%;
   margin: 10px 4px;
+  text-transform: uppercase;
 }
 
 .App>.icon-caidan{
   font-size: 22px;
   color: #fcfdfc;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 1vw;
+  top: 4vw;
   cursor: pointer;
+  z-index: 1;
 }
 
 .App>.aside-opened>.header>p{
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   flex-grow: 1;
   flex-shrink: 1;
   text-align: center;
-  font-size: 17px;
-  margin-left: 30px;
+  font-size: 3vw;
+  margin-left: 3vw;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 193px;
+  max-width: 170px;
 }
 
 .App>.aside-opened>.header>button{
   background: transparent;
   color: #fff;
   border: none;
-  padding: 3px 5px;
+  padding: 3px;
+  padding-right: 1vw;
   cursor: pointer;
 }
 
@@ -98,14 +108,16 @@
 }
 
 .App>.main>.header{
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 30px;
+  font-weight: 800;
   color: #e0eefa;
-  background-color: rgb(102, 137, 100);
+  background-color: rgba(200, 200, 200,.3);
   margin: 0;
   padding: 13px;
   flex-grow: 0;
   flex-shrink: 0;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 .App>.main>.todos{

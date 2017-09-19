@@ -24,7 +24,7 @@
     top: 100%;
     width: 0;
     height: 2px;
-    background: #db4c3f;
+    background: #39CCCC;
 }
 
 .signInOrSignUp nav label>.underline-left{
@@ -45,8 +45,8 @@
 }
 
 .signInOrSignUp nav>input[type="radio"].checked+label{
-    color: #db4c3f;
-    border-bottom-color: #db4c3f;
+    color: #39CCCC;
+    border-bottom-color: #39CCCC;
 }
 
 .signInOrSignUp nav>input[type="radio"].checked+label>span{
