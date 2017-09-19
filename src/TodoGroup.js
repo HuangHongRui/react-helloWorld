@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './TodoGroup.css';
-import '../public/iconfont/iconfont.css';
+import './iconfont/iconfont.css';
 
 export default class TodoGroup extends Component{
     constructor(props){

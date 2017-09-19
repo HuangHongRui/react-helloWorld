@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import 'normalize.css';
 import './reset.css';
 import './App.css';
-import './../public/iconfont/iconfont.css';
+import './iconfont/iconfont.css';
 import TodoInput from './TodoInput';
 import TodoItem from './TodoItem';
 import UserDialog from './UserDialog';
