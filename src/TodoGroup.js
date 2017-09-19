@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './TodoGroup.css';
-import './../public/iconfont/iconfont.css';
+import './iconfont/iconfont.css';
 
 export default class TodoGroup extends Component{
     constructor(props){
@@ -9,7 +9,6 @@ export default class TodoGroup extends Component{
             desGroup: ''
         }
     }
-
     render(){
         let groups = this.props.groups.map((item, index)=>{
             return(
@@ -54,7 +53,7 @@ export default class TodoGroup extends Component{
                 alert('至少要保留一个分组')
                 return;
             }
-            let isConfirm = confirm('您的操作将删除该分组下的所有待办事项，是否继续？')
+            let isConfirm = window.confirm('您的操作将删除该分组下的所有待办事项，是否继续？')
             if(isConfirm){
                 this.setState({
                     desGroup: e.currentTarget.innerText

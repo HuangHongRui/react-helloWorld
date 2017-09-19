@@ -5,7 +5,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url('./../public/images/bg-sign.svg');
+    background-image: url('images/bg-sign.svg');
     background-attachment: fixed;
     background-position: center;
     background-size: 100vw;
