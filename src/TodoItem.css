@@ -1,0 +1,32 @@
+.TodoItem{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.TodoItem>input[type="checkbox"]{
+    display: none;
+}
+
+.TodoItem>.title{
+    flex-grow: 1;
+    padding: 0 0.5em;
+}
+
+.TodoItem>.completed~.title{
+    text-decoration: line-through;
+    color: #999;
+}
+
+.TodoItem>button{
+    border: none;
+    background-color: transparent;
+}
+
+.TodoItem i{
+    color: #ff5555;
+}
+
+.TodoItem i:hover{
+    color: #ffcc99;
+}
