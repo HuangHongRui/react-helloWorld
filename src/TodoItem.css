@@ -6,6 +6,7 @@
     background-color: rgba(200,200,200,0.2);
     padding: 1em;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 18px;
     position: relative;
@@ -21,11 +22,13 @@
 }
 
 .TodoItem>.title{
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     padding: 0 1em;
     color: #ddd;
 }
-
+.TodoItem>.timer{
+    color: #ddd
+}
 .TodoItem>.completed~.title{
     text-decoration: line-through;
     font-weight: bold;
@@ -34,6 +37,7 @@
 .TodoItem>button{
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
 .TodoItem i{

@@ -8,7 +8,9 @@ export default function(props){
             <input type="text" className="InputBar"
                 placeholder={props.placeHolder}
                 value={props.content}
+                //回车触发submit
                 onKeyPress={submit.bind(null, props)}
+                //更改触发Props的onChange
             onChange={changeTitle.bind(null, props)}/>
             <button type="submit"><i className="iconfont icon-tianjia"></i></button>
         </form>
@@ -32,3 +34,4 @@ function submit(props, e){
 function changeTitle(props, e){
     props.onChange(e);
 }
+

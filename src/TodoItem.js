@@ -14,6 +14,7 @@ class TodoItem extends React.Component{
                     <i className={"iconfont "+(this.props.todo.status === 'completed' ? "icon-checkbox1" : "icon-checkbox")}></i>
                 </label>
                 <span className="title">{this.props.todo.title}</span>
+                <span className="timer">{this.props.todo.timer}</span>
                 <button onClick={this.delete.bind(this)}><i className="iconfont icon-delete"></i></button>
             </div>
         );

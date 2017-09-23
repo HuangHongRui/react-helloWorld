@@ -1,14 +1,16 @@
+//导入
 import AV from 'leancloud-storage'
-
+//ID、KEY 导入初始化
 var APP_ID = '563IXEClQ5Xf1HVFlHaCmorL-gzGzoHsz';
 var APP_KEY = '6w8mSAdwqvCvNjXUAgKofymo';
 AV.init({
   appId: APP_ID,
   appKey: APP_KEY
 });
-
+//导出
 export default AV;
 
+//导出注册
 export function signUp(username, password, email, successFn, errorFn){
   //新建AVUser实例对象
   var user = new AV.User();
@@ -28,8 +30,9 @@ export function signUp(username, password, email, successFn, errorFn){
 
   return undefined;
 }
-
+//导出登录
 export function signIn(username, password, successFn, errorFn){
+  //登录输入账号密码；
   AV.User.logIn(username, password).then(function (loginedUser){
     let user = getUserFromAVUser(loginedUser);
     successFn.call(null, user);
@@ -48,8 +51,10 @@ function getUserFromAVUser(AVUser){
   }
 }
 
+//导出
 export function getCurrentUser(){
   let user = AV.User.current();
+  //判断当前用户是否为空，为空就跳转到登录页面让用户登录，如果不为空就跳转到首页
   if(user){
     return getUserFromAVUser(user);
   }
@@ -57,7 +62,7 @@ export function getCurrentUser(){
     return null;
   }
 }
-
+//退出
 export function signOut(){
   AV.User.logOut();
 
@@ -70,7 +75,7 @@ export function loadList(userID, successFn, errorFn){
   var list = [];
   AV.Query.doCloudQuery(`select * from ${className}`)
   .then(function(res){
-
+    // res 中的 results 是本次查询返回的结果，AV.Object 实例列表
     for(let i=0; i<res.results.length; i++){
       let obj = {
         id: res.results[i].id,
@@ -104,6 +109,7 @@ export function saveListTable(item, user, successFn, errorFn){
    var todoList = new TodoList();
    todoList.set('username', user.username);
    todoList.set('title', item.title);
+   todoList.set('timer', item.timer);
    todoList.set('status', item.status);
    todoList.set('deleted', item.deleted);
    todoList.set('group', item.group);
